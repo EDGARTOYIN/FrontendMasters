@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-blue-500 flex items-center justify-center p-4 text-3xl min-h-screen"
+  >
+    <main class="flex-1 max-w-[28rem]">
+      <section
+        class="overflow-auto rounded-lg w-full"
+        data-containter="calculadora"
+      >
+        <div
+          data-result
+          class="bg-black text-4xl font-bold py-6 px-10 text-white text-right"
+        >
+          0
+        </div>
+        <section data-buttons="operations" class="grid grid-cols-4">
+          <button
+            data-clear
+            class="col-span-2 bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            C
+          </button>
+          <button
+            data-delete
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            ←
+          </button>
+          <button
+            data-operator
+            class="bg-gray-200 bg-orange-300 px-4 py-8 border-black border-b text-white"
+          >
+            ÷
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            7
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            8
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            9
+          </button>
+          <button
+            data-operator
+            class="bg-gray-200 px-4 py-8 border-black border-b bg-orange-300 text-white"
+          >
+            x
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            4
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            5
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            6
+          </button>
+          <button
+            data-operator
+            class="bg-gray-200 bg-orange-300 px-4 py-8 border-black border-b text-white"
+          >
+            -
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            1
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            2
+          </button>
+          <button
+            data-n="number"
+            class="bg-gray-200 px-4 py-8 border-black border-r border-b"
+          >
+            3
+          </button>
+          <button
+            data-operator
+            class="bg-gray-200 bg-orange-300 px-4 py-8 border-black border-b text-white"
+          >
+            +
+          </button>
+          <button
+            data-n="number"
+            class="col-span-3 bg-gray-200 px-4 py-8 border-black border-r"
+          >
+            0
+          </button>
+          <button
+            data-operator
+            class="bg-gray-200 px-4 py-8 border-black bg-orange-300 text-white"
+          >
+            =
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <script src="./index.js" />
+  </body>
+</html>

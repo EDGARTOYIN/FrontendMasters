@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-['Open_Sans'] min-h-screen flex flex-col">
+    <header>
+      <nav>
+        <div
+          class="bg-[#43281c] text-[#fbf2c0] font-bold text-lg gap-1 flex justify-center items-center p-4"
+        >
+          <img
+            src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+            alt="Logo"
+            width="50"
+          />
+          <h1>Coffee Masters</h1>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="flex-1 flex flex-col justify-between m-auto w-[95%] py-8 pt-16"
+    >
+      <!--List Item to buy-->
+      <div class="flex justify-between gap-10">
+        <div class="bg-[#ede1d5] py-1 flex-1 max-w-2xl px-2">
+          <section>
+            <h2 class="tracking-wider uppercase p-2">items</h2>
+            <div class="flex justify-between border border-b-black p-4">
+              <div class="flex gap-5">
+                <p>1x</p>
+                <section>
+                  <h3>Cappuccino</h3>
+                  <p>Lite foam</p>
+                </section>
+              </div>
+              <p class="mr-4">$3.35</p>
+            </div>
+          </section>
+          <section>
+            <div class="flex justify-between border border-b-black p-4">
+              <div class="flex gap-5">
+                <p>1x</p>
+                <section>
+                  <h3>Cappuccino</h3>
+                  <p>Lite foam</p>
+                  <p>Double espresso</p>
+                </section>
+              </div>
+              <p class="mr-4">$3.35</p>
+            </div>
+          </section>
+          <section>
+            <div class="flex justify-between p-4">
+              <div class="flex gap-5">
+                <p>1x</p>
+                <section>
+                  <h3>Cappuccino</h3>
+                  <p>Butter</p>
+                </section>
+              </div>
+              <p class="mr-4">$3.35</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="flex-1 max-w-2xl">
+          <!--User data section-->
+          <section class="bg-[#ede1d5]">
+            <h2 class="tracking-wider uppercase">Name</h2>
+            <div>
+              <label for="name">name for order</label>
+              <input type="text" />
+            </div>
+          </section>
+          <!--Payment section-->
+          <section class="bg-[#ede1d5]">
+            <h2 class="tracking-wider uppercase">Payment</h2>
+            <div>
+              <label for="name">Card number</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label for="name">CCV Number</label>
+              <input type="text" />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div>
+        <!--Payment information-->
+        <section class="flex flex-col max-w-sm m-auto p-5 gap-2">
+          <div class="flex justify-between">
+            <p>Subtotal:</p>
+            <p>$9.65</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Tax:</p>
+            <p>$0.82</p>
+          </div>
+          <div class="flex justify-between font-medium">
+            <p>Total:</p>
+            <p>$10.47</p>
+          </div>
+        </section>
+
+        <button class="bg-[#deb993] text-center p-2 w-full rounded-full m-auto">
+          Place order
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
